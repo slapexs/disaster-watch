@@ -57,7 +57,7 @@ export default async function Page() {
 								<div className="font-semibold">{item.title}</div>
 								<div className="text-xs font-semibold opacity-60  items-center mt-2">
 									<p className="list-col-wrap text-xs">
-										เวลา: {dayjs(item["tmd:time"][0]).format("HH:mm:ss - DD/MM/YYYY")}
+										เวลา: {dayjs(item["tmd:time"][0]).add(7, "h").format("HH:mm:ss - DD/MM/YYYY")}
 									</p>
 								</div>
 								<div>
